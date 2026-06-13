@@ -1,8 +1,16 @@
 {
     "author": "overcuriousity@posteo.org (fork of ericlmccormick/Pebble_7_day_ICS_Calendar)",
     "dependencies": {
-        "ical-expander": "1.1.2",
         "pebble-clay": "^1.0.4"
+    },
+    "devDependencies": {
+        "ical-expander": "1.1.2",
+        "ical.js": "1.5.0"
+    },
+    "scripts": {
+        "vendor": "cp node_modules/ical.js/build/ical.min.js src/pkjs/lib/ical.min.js && cp node_modules/ical-expander/zones-compiled.json src/pkjs/lib/zones-compiled.json",
+        "test": "node test/parse.test.js test/fixture.ics",
+        "build": "pebble build && (cd build && zip -dq caldav-calendar.pbw pebble-js-app.js.map || true)"
     },
     "keywords": [],
     "name": "caldav-calendar",

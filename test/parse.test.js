@@ -14,7 +14,8 @@ var fs    = require('fs');
 var path  = require('path');
 var https = require('https');
 var http  = require('http');
-var IcalExpander = require('ical-expander');
+// Exercise the exact vendored wrapper that ships in the app bundle.
+var IcalExpander = require('../src/pkjs/lib/ical-expander.js');
 
 // --- Parse CLI args ---
 var days = 7;

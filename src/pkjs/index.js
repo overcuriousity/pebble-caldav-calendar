@@ -1,8 +1,10 @@
 var Clay = require('pebble-clay');
 var clayConfig = require('./config');
 var messageKeys = require('message_keys');
-// ical-expander 1.1.2 → ical.js 1.x (ES5, safe for Pebble's Duktape runtime)
-var IcalExpander = require('ical-expander');
+// Vendored ES5 ical-expander wrapper over the minified ical.js build.
+// Ships the 80 KB ical.min.js instead of the 275 KB unminified source.
+// See src/pkjs/lib/ for details; regenerate vendored files with `npm run vendor`.
+var IcalExpander = require('./lib/ical-expander.js');
 
 var clay = new Clay(clayConfig, null, { autoHandleEvents: false });
 
