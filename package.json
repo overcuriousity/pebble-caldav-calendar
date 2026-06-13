@@ -1,0 +1,36 @@
+{
+    "author": "anonauth@posteo.org (fork of ericlmccormick/Pebble_7_day_ICS_Calendar)",
+    "dependencies": {
+        "ical-expander": "1.1.2",
+        "pebble-clay": "^1.0.4"
+    },
+    "keywords": [],
+    "name": "7day-caldav-calendar",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "7day CalDAV Calendar",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "TOTAL_EVENTS",
+            "CHUNK_INDEX",
+            "EVENT_DATA",
+            "TIME_FORMAT",
+            "ICAL_URL"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "emery"
+        ],
+        "uuid": "280c1eaf-6bad-477e-aa34-e0197966b0bd",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
