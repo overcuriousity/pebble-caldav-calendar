@@ -1,23 +1,28 @@
 {
-    "author": "anonauth@posteo.org (fork of ericlmccormick/Pebble_7_day_ICS_Calendar)",
+    "author": "overcuriousity@posteo.org (fork of ericlmccormick/Pebble_7_day_ICS_Calendar)",
     "dependencies": {
         "ical-expander": "1.1.2",
         "pebble-clay": "^1.0.4"
     },
     "keywords": [],
-    "name": "7day-caldav-calendar",
+    "name": "caldav-calendar",
     "pebble": {
         "capabilities": [
             "configurable"
         ],
-        "displayName": "7day CalDAV Calendar",
+        "displayName": "CalDAV Calendar",
         "enableMultiJS": true,
         "messageKeys": [
             "TOTAL_EVENTS",
             "CHUNK_INDEX",
             "EVENT_DATA",
             "TIME_FORMAT",
-            "ICAL_URL"
+            "ICAL_URL_1",
+            "ICAL_URL_2",
+            "ICAL_URL_3",
+            "ICAL_URL_4",
+            "ICAL_DAYS",
+            "ICAL_SYNC_INTERVAL"
         ],
         "projectType": "native",
         "resources": {
@@ -27,7 +32,7 @@
         "targetPlatforms": [
             "emery"
         ],
-        "uuid": "280c1eaf-6bad-477e-aa34-e0197966b0bd",
+        "uuid": "a1799c66-ef8e-4353-a875-7e218e1526e5",
         "watchapp": {
             "watchface": false
         }
